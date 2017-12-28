@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		334B1305814682DE843E7B68 /* Pods_NCKUIKitDemo1_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCKUIKitDemo1_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		412823888BA2E656D72DC080 /* NCKUIKitDemo1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NCKUIKitDemo1.podspec; path = ../NCKUIKitDemo1.podspec; sourceTree = "<group>"; };
+		412823888BA2E656D72DC080 /* NCKUIKitDemo1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NCKUIKitDemo1.podspec; path = ../NCKUIKitDemo1.podspec; sourceTree = "<group>"; };
 		4609381FB90DB6A0D40D5145 /* Pods-NCKUIKitDemo1_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCKUIKitDemo1_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCKUIKitDemo1_Example/Pods-NCKUIKitDemo1_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* NCKUIKitDemo1_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCKUIKitDemo1_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,12 +60,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7AF03F5D2713BA1F5B4317AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7AF03F5D2713BA1F5B4317AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E5494DC7CE6362076518C3A /* Pods-NCKUIKitDemo1_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCKUIKitDemo1_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCKUIKitDemo1_Tests/Pods-NCKUIKitDemo1_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAC36B148EBF8EDD63C4A8D1 /* Pods-NCKUIKitDemo1_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCKUIKitDemo1_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCKUIKitDemo1_Example/Pods-NCKUIKitDemo1_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B5EA3C58C72193CF78966810 /* Pods-NCKUIKitDemo1_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCKUIKitDemo1_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCKUIKitDemo1_Tests/Pods-NCKUIKitDemo1_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C46664FA9B28E88FF7BDB034 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C46664FA9B28E88FF7BDB034 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EA8D8771B2425B0CF55E0FC9 /* Pods_NCKUIKitDemo1_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCKUIKitDemo1_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = mantou811;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = QC98KGCJN9;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -322,11 +325,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NCKUIKitDemo1_Example/Pods-NCKUIKitDemo1_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/NCKFoundation/NCKFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/NCKUIKitDemo1/NCKUIKitDemo1.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCKFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCKUIKitDemo1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,9 +542,11 @@
 			baseConfigurationReference = AAC36B148EBF8EDD63C4A8D1 /* Pods-NCKUIKitDemo1_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QC98KGCJN9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCKUIKitDemo1/NCKUIKitDemo1-Prefix.pch";
 				INFOPLIST_FILE = "NCKUIKitDemo1/NCKUIKitDemo1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,9 +559,11 @@
 			baseConfigurationReference = 4609381FB90DB6A0D40D5145 /* Pods-NCKUIKitDemo1_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QC98KGCJN9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCKUIKitDemo1/NCKUIKitDemo1-Prefix.pch";
 				INFOPLIST_FILE = "NCKUIKitDemo1/NCKUIKitDemo1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

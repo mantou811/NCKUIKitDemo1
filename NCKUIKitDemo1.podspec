@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NCKUIKitDemo1'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of NCKUIKitDemo1.'
+  s.version          = '1.0.0'
+  s.summary          = 'My NCKUIKitDemo1.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,7 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'NCKUIKitDemo1/Classes/**/*'
+s.source_files = 'NCKUIKitDemo1/Classes/*.{h,m,mm}'
+s.dependency 'SDWebImage', '~> 3.8.2'
+s.vendored_frameworks = ['NCKUIKitDemo1/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Base.framework','NCKUIKitDemo1/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Location.framework','NCKUIKitDemo1/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Map.framework','NCKUIKitDemo1/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Search.framework','NCKUIKitDemo1/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Utils.framework']
+s.resource_bundles = {'Resources' => 'NCKUIKitDemo1/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Map.framework/Resources/mapapi.bundle'}
+s.frameworks = 'CoreLocation','QuartzCore','OpenGLES','SystemConfiguration','CoreGraphics','Security','CoreTelephony'
+s.libraries = 'sqlite3.0', 'stdc++.6.0.9'
+s.dependency 'NCKFoundation'
   
   # s.resource_bundles = {
   #   'NCKUIKitDemo1' => ['NCKUIKitDemo1/Assets/*.png']

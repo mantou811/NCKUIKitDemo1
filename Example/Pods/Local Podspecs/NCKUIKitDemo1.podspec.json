@@ -1,0 +1,53 @@
+{
+  "name": "NCKUIKitDemo1",
+  "version": "1.0.0",
+  "summary": "My NCKUIKitDemo1.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mantou811/NCKUIKitDemo1",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mantou811": "2287951815@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/mantou811/NCKUIKitDemo1.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NCKUIKitDemo1/Classes/*.{h,m,mm}",
+  "dependencies": {
+    "SDWebImage": [
+      "~> 3.8.2"
+    ],
+    "NCKFoundation": [
+
+    ]
+  },
+  "vendored_frameworks": [
+    "NCKUIKit/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Base.framework",
+    "NCKUIKit/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Location.framework",
+    "NCKUIKit/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Map.framework",
+    "NCKUIKit/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Search.framework",
+    "NCKUIKit/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Utils.framework"
+  ],
+  "resource_bundles": {
+    "Resources": "NCKUIKit/Classes/BaiduMap_IOSSDK_v3.0.0_Lib/BaiduMapAPI_Map.framework/Resources/mapapi.bundle"
+  },
+  "frameworks": [
+    "CoreLocation",
+    "QuartzCore",
+    "OpenGLES",
+    "SystemConfiguration",
+    "CoreGraphics",
+    "Security",
+    "CoreTelephony"
+  ],
+  "libraries": [
+    "sqlite3.0",
+    "stdc++.6.0.9"
+  ]
+}

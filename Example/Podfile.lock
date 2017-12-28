@@ -1,0 +1,44 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - NCKFoundation (0.1.1):
+    - AFNetworking (~> 3.1.0)
+    - NCKFoundation/NCKSub (= 0.1.1)
+  - NCKFoundation/NCKSub (0.1.1):
+    - AFNetworking (~> 3.1.0)
+  - NCKUIKitDemo1 (1.0.0):
+    - NCKFoundation
+    - SDWebImage (~> 3.8.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+
+DEPENDENCIES:
+  - NCKUIKitDemo1 (from `../`)
+
+EXTERNAL SOURCES:
+  NCKUIKitDemo1:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  NCKFoundation: 136746fad475921d2f223e659b62d1e754e81d73
+  NCKUIKitDemo1: 41fb4e2bf916aba8379322847def64fd96265f50
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+
+PODFILE CHECKSUM: a0fc667d735c7192dd86470f19aec816dccd831a
+
+COCOAPODS: 1.3.1

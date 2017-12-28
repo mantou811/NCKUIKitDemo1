@@ -1,5 +1,7 @@
 use_frameworks!
 
+source 'https://github.com/mantou811/NCKSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 target 'NCKUIKitDemo1_Example' do
   pod 'NCKUIKitDemo1', :path => '../'
 
