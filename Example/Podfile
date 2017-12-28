@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NCKUIKitDemo1_Example' do
+  pod 'NCKUIKitDemo1', :path => '../'
+
+  target 'NCKUIKitDemo1_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
